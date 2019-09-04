@@ -1,0 +1,83 @@
+---
+title: "first-analysis"
+author: "shiy14"
+date: "2019-09-02"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Problem 1
+
+```{r}
+x = c(0.2,0.4,0.6,0.8,1)
+x
+```
+
+## Problem 2
+
+```{r}
+x[c(3,5)]
+```
+
+## Problem 3
+
+```{r}
+x[c(-2,-4)]
+```
+
+## Problem 4
+
+```{r}
+x[1] = 0
+x
+```
+
+## Problem 5
+
+```{r}
+video = c(47, 63, 58, 53, 53, 63, 53, 39, 58, 50)
+video
+
+video[video < 52]
+```
+
+## Problem 6
+
+```{r}
+video[video <= 53]
+```
+
+## Problem 7
+
+```{r}
+meanvideo = mean(video)
+meanvideo > 50
+```
+
+## Problem 8
+
+```{r}
+video.new = c(47, 63, 58, 53, 53, 63, 53, 39, 58, 50, 47, 63, 58, 53, 53, 63, 53, 39, 58, 50)
+
+sum(video.new > 58)
+```
+
+## Problem 9
+
+```{r}
+videoless53 = video.new[video.new < 53]
+videoless53
+
+var(videoless53)
+```
+
+## Problem 10
+
+```{r}
+flavor = c("C","V","S","S","V","V","V","V","V","V","V","V","S","V","V","V","S","C","V")
+
+sum(flavor=="S")/19
+```
+
+
