@@ -9,3 +9,7 @@ editor_options:
 ---
 
 Welcome to my research website.
+
+## Lab1
+
+[Lab1 Assignment](first-analysis.html)
